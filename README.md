@@ -6,7 +6,9 @@
 
 ## Стек технологий
 Язык: Python
+
 Библиотеки: pandas, numpy, scipy.stats (t-test), statsmodels (Power Analysis)
+
 Методы: Bootstrap, Расчет мощности (MDE), Визуализация распределений.
 
 ## Этапы исследования
