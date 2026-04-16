@@ -32,10 +32,10 @@ def confidense_bootstrap(sample1, sample2, boot_iters = 1000):
 Визуализация результатов
 
 > **Сравнение распределений в группах**
-> <img width="575" height="437" alt="image" src="https://github.com/user-attachments/assets/926bd779-9139-433b-8de5-57231e40b277" />
+<img width="575" height="437" alt="image" src="https://github.com/user-attachments/assets/926bd779-9139-433b-8de5-57231e40b277" />
 
 > **Гистограмма распределения самого пробега (kms) для двух групп (Control и Test)**
-> <img width="575" height="437" alt="image" src="https://github.com/user-attachments/assets/01bbafbc-7693-4f66-9b91-33b75a4f3d92" />
+<img width="575" height="437" alt="image" src="https://github.com/user-attachments/assets/01bbafbc-7693-4f66-9b91-33b75a4f3d92" />
 
 
 ## Результаты и выводы
