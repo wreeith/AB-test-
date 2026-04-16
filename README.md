@@ -16,7 +16,19 @@
 2. Проверка статистических гипотез:
   Применил t-test для сравнения средних.
   Использовал Bootstrap для построения доверительного интервала разности средних (непараметрический метод).
-3. Анализ мощности (Post-hoc Power Analysis): Расчет MDE (Minimum Detectable Effect) для оценки чувствительности теста.
+3. Анализ мощности (Post-hoc Power Analysis): Расчет MDE для оценки чувствительности теста.
+
+### Фрагмент кода: Реализация Bootstrap
+
+```python
+def confidense_bootstrap(sample1, sample2, boot_iters = 1000):
+    final_sample = []
+    for i in range(boot_iters):
+        mean1 = np.random.choice(sample1, len(sample1)).mean()
+        mean2 = np.random.choice(sample2, len(sample2)).mean()
+        final_sample.append(mean1 - mean2)
+    return np.percentile(final_sample, 2.5), np.percentile(final_sample, 97.5)
+```
 
 ## Результаты и выводы
 T-test: p-value = 0.78, что значительно выше уровня значимости 0.05. Статистически значимых различий между группами не обнаружено.
